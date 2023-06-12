@@ -1,0 +1,71 @@
+Requirements,Apache Cassandra,Apache HBase,Azure Cosmos DB,Google Cloud Bigtable,MariaDB,MySQL,PostgreSQL,Redis,ScyllaDB,TimescaleDB
+Linux support on premise,1,1,0,0,1,1,1,1,1,1
+,https://cassandra.apache.org/doc/latest/cassandra/getting_started/installing.html,https://hbase.apache.org/book.html#_introduction,Cloud Service,Cloud Service,https://mariadb.org/download,https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html,https://www.postgresql.org/download/linux/,https://redis.io/docs/getting-started/installation/install-redis-on-linux/,https://docs.scylladb.com/stable/getting-started/install-scylla/scylla-web-installer.html,https://docs.timescale.com/self-hosted/latest/install/installation-linux/
+"Linux Native Support
+0 = JVM
+1 = Native",0,0,0,0,1,1,1,1,1,1
+,https://cassandra.apache.org/doc/latest/cassandra/getting_started/installing.html,https://hbase.apache.org/book.html#_introduction,Cloud Service,Cloud Service,https://mariadb.org/download,https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html,https://www.postgresql.org/download/linux/,https://redis.io/docs/getting-started/installation/install-redis-on-linux/,https://docs.scylladb.com/stable/getting-started/install-scylla/scylla-web-installer.html,https://docs.timescale.com/self-hosted/latest/install/installation-linux/
+Horizontal Scaling (Sharding),1,1,1,1,1,1,1,1,1,1
+,"https://cassandra.apache.org/_/cassandra-basics.html
+https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html",https://hbase.apache.org/book.html#_architecture,Cloud Service,Cloud Service,"https://mariadb.com/database-topics/scalability
+https://mariadb.com/kb/en/mariadb-maxscale-6-simple-sharding-with-two-servers",https://www.mysql.com/products/cluster/scalability.html,"https://www.postgresql.org/docs/current/ddl-partitioning.html
+https://www.percona.com/blog/an-overview-of-sharding-in-postgresql-and-how-it-relates-to-mongodbs
+https://postgrespro.com/blog/pgsql/5969681",https://redis.io/docs/management/scaling,"https://www.scylladb.com/product/technology
+https://www.scylladb.com/glossary/database-sharding","https://docs.timescale.com/self-hosted/latest/multinode-timescaledb
+https://docs.timescale.com/use-timescale/latest/distributed-hypertables"
+Horizontal Scaling (Replication),1,1,1,1,1,1,1,1,1,1
+,"https://cassandra.apache.org/_/cassandra-basics.html
+https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html
+https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/architecture/archDataDistributeReplication.html",https://hbase.apache.org/book.html#_architecture,Cloud Service,Cloud Service,"https://mariadb.com/database-topics/scalability
+https://mariadb.com/kb/en/standard-replication",https://www.mysql.com/products/cluster/scalability.html,https://www.postgresql.org/docs/current/runtime-config-replication.html,https://redis.io/docs/management/replication,https://docs.scylladb.com/stable/architecture/architecture-fault-tolerance.html,"https://docs.timescale.com/self-hosted/latest/replication-and-ha/#replication-and-high-availability
+https://docs.timescale.com/self-hosted/latest/replication-and-ha/configure-replication"
+"Active Development
+Alpha, Beta, RC not included
+Score step 1: Arithmatic Average of release in 2021-2023
+Score step 2: Arithmatic Average of Score step 1
+Score step 3: If the score of a database is greater or equal to the score step 2 the score is 1 otherwise 0",24,31,,,48,32,54,15,21,30
+,8.00,10.33333333,,,16,10.66666667,18,5,7,10
+,0,0,1,1,1,1,1,0,0,0
+,https://archive.apache.org/dist/cassandra/,https://archive.apache.org/dist/hbase,Corporate backed closed source development,Corporate backed closed source development,https://mariadb.com/kb/en/release-notes,https://dev.mysql.com/doc/relnotes/mysql/8.0/en,https://www.postgresql.org/docs/release,https://docs.redis.com/latest/rs/release-notes/,https://www.scylladb.com/product/release-notes,https://github.com/timescale/timescaledb/releases
+"Community Support
+Score: Mailing List + Stack Overflow + Slack + Official Forum / Chat",3,3,1,1,4,3,4,3,3,3
+,1,1,0,0,1,1,1,1,1,1
+,https://cassandra.apache.org/_/community.html,"https://hbase.apache.org/mail-lists.html
+https://stackoverflow.com/questions/tagged/hbase
+https://apache-hbase.slack.com",https://stackoverflow.com/questions/tagged/azure-cosmosdb,https://stackoverflow.com/questions/tagged/google-cloud-bigtable,"https://mariadb.com/kb/en/mailing-lists
+https://stackoverflow.com/questions/tagged/mariadb
+https://r.mariadb.com/join-community-slack
+https://mariadb.zulipchat.com","https://stackoverflow.com/questions/tagged/mysql
+http://mysqlcommunity.slack.com
+https://forums.mysql.com",https://www.postgresql.org/community,https://redis.io/community/,https://www.scylladb.com/product/support/#community-support,https://www.timescale.com/community
+"Active Community
+Score step 1: Arithmatic Average of questions with accpeted answer in last 3 years
+Score step 2: Arithmatic Average of Score step 1
+Score step 3: If the score of a database is greater or equal to the score step 2 the score is 1 otherwise 0",412.6666667,48.66666667,438.3333333,26.66666667,842.33,"11,697.33","8,710.33",794.33,12.00,20.67
+,0,0,0,0,0,1,1,0,0,0
+,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags,https://data.stackexchange.com/stackoverflow/query/1752868/last-3-years-question-count-with-accepted-answer-for-specific-tags
+Java API / Client / Driver,1,1,1,1,1,1,1,1,1,1
+,https://cassandra.apache.org/doc/latest/cassandra/getting_started/drivers.html,https://hbase.apache.org/apidocs/index.html,https://learn.microsoft.com/en-gb/azure/cosmos-db/nosql/sdk-java-v4,https://cloud.google.com/bigtable/docs/reference/libraries#client-libraries-install-java,https://mariadb.com/kb/de/mariadb-java-client/,https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-overview.html,https://jdbc.postgresql.org/,https://redis.io/docs/clients/java/,https://docs.scylladb.com/stable/using-scylla/drivers/cql-drivers/scylla-java-driver.html,https://docs.timescale.com/quick-start/latest/java/
+Query Language,1,1,1,1,1,1,1,1,1,1
+,https://cassandra.apache.org/doc/latest/cassandra/cql/index.html,https://drill.apache.org/docs/querying-hbase,SQL as JSON query laguage https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started,https://cloud.google.com/bigquery/docs/external-data-bigtable,https://mariadb.com/kb/en/sql-statements/,https://dev.mysql.com/doc/refman/8.0/en/language-structure.html,https://www.postgresql.org/docs/current/tutorial-sql.html,https://redis.io/commands,https://docs.scylladb.com/stable/cql/,https://docs.timescale.com/use-timescale/latest/query-data/
+CSV Support,1,1,1,1,1,1,1,1,1,1
+,https://docs.datastax.com/en/cql-oss/3.x/cql/cql_reference/cqlshCopy.html,https://bigdataprogrammers.com/import-csv-data-into-hbase,https://medium.com/@daniel.jordan/import-a-csv-in-a-cosmos-db-over-azure-function-231880f2ddec,https://cloud.google.com/community/tutorials/cbt-import-csv,https://mariadb.com/docs/skysql-previous-release/data-operations/data-import/#TOP,https://dev.mysql.com/doc/workbench/en/wb-admin-export-import.html,https://www.postgresql.org/docs/current/sql-copy.html,https://redis.io/docs/ui/cli/,https://docs.scylladb.com/stable/cql/cqlsh.html,https://docs.timescale.com/use-timescale/latest/ingest-data/import-csv/
+Parquet Support,1,1,1,1,1,1,1,1,1,1
+,"Through Apache Spark
+https://stackoverflow.com/questions/58709751/is-there-a-simple-way-to-load-parquet-files-directly-into-cassandra
+https://stackoverflow.com/questions/59480119/group-cassandra-rows-then-write-as-parquet-file-using-spark",https://stackoverflow.com/questions/37023758/how-to-move-hbase-tables-to-hdfs-in-parquet-format,https://www.starfishetl.com/connect/Cosmos%20DB/Parquet,https://cloud.google.com/bigtable/docs/import-export,https://pipes.datavirtuality.com/connectors/integrate/parquet-file/mariadb/,https://pipes.datavirtuality.com/connectors/integrate/parquet-file/mysql,https://stackoverflow.com/questions/58786791/is-there-a-way-to-directly-insert-data-from-a-parquet-file-into-postgresql-datab,https://stackoverflow.com/questions/74584407/storing-parquet-file-in-redis,https://www.scylladb.com/2020/06/10/migrate-parquet-files-with-the-scylla-migrator/,https://stackoverflow.com/questions/58786791/is-there-a-way-to-directly-insert-data-from-a-parquet-file-into-postgresql-datab
+"Security
+Score: Role Based Security",1,1,1,1,1,1,1,1,1,1
+,https://cassandra.apache.org/doc/latest/cassandra/operating/security.html,https://hbase.apache.org/book.html#_securing_access_to_your_data,https://learn.microsoft.com/en-us/azure/cosmos-db/role-based-access-control,https://cloud.google.com/bigtable/docs/access-control,https://mariadb.com/kb/en/roles_overview/,https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/roles.html,https://www.postgresql.org/docs/current/user-manag.html,https://redis.io/docs/management/security/acl/,https://docs.scylladb.com/stable/operating-scylla/security/rbac-usecase.html,"https://docs.timescale.com/mst/latest/user-management
+https://news.ycombinator.com/item?id=25288655"
+Geospatial Support,1,1,1,1,1,1,1,1,1,1
+,"Cassandra High Availability by Robbie Strickland; E-BOOK: P131
+https://www.geomesa.org",https://www.geomesa.org,https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/geospatial-intro,https://cloud.google.com/bigquery/docs/geospatial-data,https://mariadb.com/products/skysql/geospatial/,https://dev.mysql.com/doc/refman/8.0/en/spatial-types.html,https://postgis.net/,"https://redis.io/docs/data-types/geospatial
+https://www.geomesa.org",https://java-driver.docs.scylladb.com/stable/manual/core/integration/#esri,"https://liangliangliangtan.github.io/2020-03-17-Create-time-series-spatial-databases-With-TimeScaleDB-and-PostGIS.html
+https://docs.timescale.com/tutorials/latest/grafana/geospatial-dashboards"
+Time Series Support,1,1,1,1,1,1,1,1,1,1
+,"Cassandra High Availability by Robbie Strickland; E-BOOK: P127
+https://docs.datastax.com/en/tutorials/Time_Series.pdf",Trillion time-series events per day with HBase at Tesla: https://www.youtube.com/watch?v=0Y76d5aI85M,https://learn.microsoft.com/en-us/events/azure-cosmos-db-conf-2022/leverage-azure-cosmos-db-for-time-series-for-iot-applications,https://cloud.google.com/bigtable/docs/schema-design-time-series,https://mariadb.com/resources/blog/analysis-of-financial-time-series-data-using-mariadb-columnstore,https://dba.stackexchange.com/questions/190756/what-is-the-optimal-solution-for-storing-real-time-time-series-in-mariadb-mysq,"https://www.c-sharpcorner.com/article/introduction-to-postgresql-as-a-time-series-database-for-iot
+https://www.timescale.com",https://redis.io/docs/stack/timeseries,"https://www.scylladb.com/glossary/time-series-data/#:~:text=Does%20ScyllaDB%20Offer%20Solutions%20for,and%20fraud%20detection%20use%20cases.",https://www.timescale.com/
+"Final Scoring
+0.75 * Hard_requirements + 0.25 * Soft_requirements",5.75,5.75,5,5,7.25,8,8,6.5,6.5,6.5
